@@ -1,0 +1,503 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabelhello = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local Frame2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Frame1 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Frameye = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
+local speed = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Jump = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local infinitejump = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Fly = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local SideBarhi = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local SideBar = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local Heal = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabelhello.Name = "TextLabelhello"
+TextLabelhello.Parent = ScreenGui
+TextLabelhello.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabelhello.BorderSizePixel = 0
+TextLabelhello.Position = UDim2.new(0.413184166, 0, 0.265990794, 0)
+TextLabelhello.Size = UDim2.new(0.223426744, 0, 0.0750418007, 0)
+TextLabelhello.Active = true
+TextLabelhello.Draggable = true
+TextLabelhello.Font = Enum.Font.Oswald
+TextLabelhello.Text = "Reaper Hax"
+TextLabelhello.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextLabelhello.TextSize = 29.000
+
+UICorner.Parent = TextLabelhello
+
+Frame2.Name = "Frame2"
+Frame2.Parent = TextLabelhello
+Frame2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame2.BorderSizePixel = 0
+Frame2.Position = UDim2.new(0, 0, 0.881661832, 0)
+Frame2.Size = UDim2.new(0.99952364, 0, 5.66419601, 0)
+
+UICorner_2.Parent = Frame2
+
+Frame1.Name = "Frame1"
+Frame1.Parent = TextLabelhello
+Frame1.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(-0.00047628535, 0, 0.867005587, 0)
+Frame1.Size = UDim2.new(1, 1, 0, 1)
+
+UICorner_3.Parent = Frame1
+
+Frameye.Name = "Frameye"
+Frameye.Parent = TextLabelhello
+Frameye.Active = true
+Frameye.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frameye.Position = UDim2.new(-1.5325532, 0, -0.252662212, 0)
+Frameye.Size = UDim2.new(1.44319856, 0, 3.98826671, 0)
+Frameye.Visible = false
+
+TextButton.Parent = Frameye
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.0895883814, 0, 0.712230206, 0)
+TextButton.Size = UDim2.new(0.343825668, 0, 0.172661871, 0)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "Cancel"
+TextButton.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_4.Parent = TextButton
+
+TextButton_2.Parent = Frameye
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.Position = UDim2.new(0.544794202, 0, 0.712230206, 0)
+TextButton_2.Size = UDim2.new(0.343825668, 0, 0.172661871, 0)
+TextButton_2.Font = Enum.Font.Cartoon
+TextButton_2.Text = "Set"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_5.Parent = TextButton_2
+
+TextLabel.Parent = Frameye
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(1, 0, 0.179856122, 0)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "Set Jump power"
+TextLabel.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextBox.Parent = Frameye
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.Position = UDim2.new(0.256658584, 0, 0.323741019, 0)
+TextBox.Size = UDim2.new(0.484261513, 0, 0.179856122, 0)
+TextBox.Font = Enum.Font.Cartoon
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 170, 0)
+TextBox.PlaceholderText = "Enter Jump Power"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_6.Parent = TextBox
+
+UICorner_7.Parent = Frameye
+
+Frame.Parent = TextLabelhello
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(1.10960436, 0, -0.252662212, 0)
+Frame.Size = UDim2.new(1.44319856, 0, 3.98826671, 0)
+Frame.Visible = false
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.Position = UDim2.new(0.0895883814, 0, 0.712230206, 0)
+TextButton_3.Size = UDim2.new(0.343825668, 0, 0.172661871, 0)
+TextButton_3.Font = Enum.Font.Cartoon
+TextButton_3.Text = "Cancel"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+UICorner_8.Parent = TextButton_3
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.Position = UDim2.new(0.544794202, 0, 0.712230206, 0)
+TextButton_4.Size = UDim2.new(0.343825668, 0, 0.172661871, 0)
+TextButton_4.Font = Enum.Font.Cartoon
+TextButton_4.Text = "Set"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+UICorner_9.Parent = TextButton_4
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(1, 0, 0.179856122, 0)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Set Walk Speed"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextBox_2.Parent = Frame
+TextBox_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.Position = UDim2.new(0.256658584, 0, 0.323741019, 0)
+TextBox_2.Size = UDim2.new(0.484261513, 0, 0.179856122, 0)
+TextBox_2.Font = Enum.Font.Cartoon
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(255, 170, 0)
+TextBox_2.PlaceholderText = "Enter Walk Speed"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+UICorner_10.Parent = TextBox_2
+
+UICorner_11.Parent = Frame
+
+speed.Name = "speed"
+speed.Parent = TextLabelhello
+speed.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+speed.BorderColor3 = Color3.fromRGB(255, 170, 0)
+speed.Position = UDim2.new(0.178868502, 0, 1.23926473, 0)
+speed.Size = UDim2.new(0, 221, 0, 37)
+speed.Font = Enum.Font.Oswald
+speed.Text = "Speed Power"
+speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed.TextSize = 29.000
+
+UICorner_12.Parent = speed
+
+Jump.Name = "Jump"
+Jump.Parent = TextLabelhello
+Jump.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Jump.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Jump.Position = UDim2.new(0.180398539, 0, 2.40345383, 0)
+Jump.Size = UDim2.new(0, 221, 0, 37)
+Jump.Font = Enum.Font.Oswald
+Jump.Text = "Jump Power"
+Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jump.TextSize = 29.000
+
+UICorner_13.Parent = Jump
+
+infinitejump.Name = "infinitejump"
+infinitejump.Parent = TextLabelhello
+infinitejump.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+infinitejump.BorderColor3 = Color3.fromRGB(255, 170, 0)
+infinitejump.Position = UDim2.new(0.180398539, 0, 3.52601647, 0)
+infinitejump.Size = UDim2.new(0, 221, 0, 37)
+infinitejump.Font = Enum.Font.Oswald
+infinitejump.Text = "Infinite Jump"
+infinitejump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infinitejump.TextSize = 29.000
+
+UICorner_14.Parent = infinitejump
+
+Fly.Name = "Fly"
+Fly.Parent = TextLabelhello
+Fly.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Fly.BorderColor3 = Color3.fromRGB(255, 170, 0)
+Fly.Position = UDim2.new(0.180398539, 0, 4.57615566, 0)
+Fly.Size = UDim2.new(0, 221, 0, 37)
+Fly.Font = Enum.Font.Oswald
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 29.000
+
+UICorner_15.Parent = Fly
+
+SideBarhi.Name = "SideBarhi"
+SideBarhi.Parent = TextLabelhello
+SideBarhi.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+SideBarhi.BorderSizePixel = 0
+SideBarhi.Position = UDim2.new(0, 0, -0.0181058496, 0)
+SideBarhi.Size = UDim2.new(0, 1, 0, 346)
+
+UICorner_16.Parent = SideBarhi
+
+SideBar.Name = "SideBar"
+SideBar.Parent = TextLabelhello
+SideBar.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+SideBar.BorderSizePixel = 0
+SideBar.Position = UDim2.new(1.00050116, 0, 0, 0)
+SideBar.Size = UDim2.new(0, 1, 0, 346)
+
+UICorner_17.Parent = SideBar
+
+Heal.Name = "Heal"
+Heal.Parent = ScreenGui
+Heal.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Heal.BorderColor3 = Color3.fromRGB(255, 204, 204)
+Heal.BorderSizePixel = 0
+Heal.Position = UDim2.new(0.483770669, 0, -0.000674754381, 0)
+Heal.Size = UDim2.new(0, 132, 0, 23)
+Heal.Font = Enum.Font.Oswald
+Heal.Text = "Heal"
+Heal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Heal.TextSize = 29.000
+
+UICorner_18.Parent = Heal
+
+-- Scripts:
+
+local function BQCGWK_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+end
+coroutine.wrap(BQCGWK_fake_script)()
+local function VJHCGJ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		wait(0.6)
+		script.Parent.Parent.Visible = false
+		game.Players.LocalPlayer.character.Humanoid.JumpPower = script.Parent.Parent.TextBox.Text
+	end)
+	
+	
+end
+coroutine.wrap(VJHCGJ_fake_script)()
+local function FPLFA_fake_script() -- Frameye.LocalScript 
+	local script = Instance.new('LocalScript', Frameye)
+
+	local Frameye = script.Parent
+	
+	Frameye.Active = true
+	Frameye.Draggable = true
+end
+coroutine.wrap(FPLFA_fake_script)()
+local function QHIZPTB_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+end
+coroutine.wrap(QHIZPTB_fake_script)()
+local function RMKY_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		wait(0.6)
+		script.Parent.Parent.Visible = false
+		game.Players.LocalPlayer.character.Humanoid.WalkSpeed = script.Parent.Parent.TextBox.Text
+	end)
+	
+	
+end
+coroutine.wrap(RMKY_fake_script)()
+local function TPCDRXA_fake_script() -- Frame.LocalScript1 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Frame = script.Parent
+	
+	Frame.Active = true
+	Frame.Draggable = true
+	
+end
+coroutine.wrap(TPCDRXA_fake_script)()
+local function YPBYB_fake_script() -- speed.LocalScript 
+	local script = Instance.new('LocalScript', speed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true
+	end)
+end
+coroutine.wrap(YPBYB_fake_script)()
+local function VPPXB_fake_script() -- Jump.LocalScript 
+	local script = Instance.new('LocalScript', Jump)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frameye.Visible = true
+	end)
+	
+end
+coroutine.wrap(VPPXB_fake_script)()
+local function UBHB_fake_script() -- infinitejump.Script 
+	local script = Instance.new('LocalScript', infinitejump)
+
+	--By NightRoverInfo99--
+	script.Parent.MouseButton1Click:Connect(function()
+		local InfiniteJumpEnabled = true
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			if InfiniteJumpEnabled then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+		local InfiniteJump = CreateButton("Infinite Jump: Off", StuffFrame)
+		InfiniteJump.Position = UDim2.new(0,10,0,130)
+		InfiniteJump.Size = UDim2.new(0,150,0,30)
+		InfiniteJump.MouseButton1Click:connect(function()
+			local state = InfiniteJump.Text:sub(string.len("Infinite Jump: ") + 1)
+			local new = state == "Off" and "On" or state == "On" and "Off"
+			InfiniteJumpEnabled = new == "On"
+			InfiniteJump.Text = "Infinite Jump: " .. new
+		end)
+	end)
+end
+coroutine.wrap(UBHB_fake_script)()
+local function JNKXJZ_fake_script() -- Fly.Flying Script -
+	local script = Instance.new('LocalScript', Fly)
+
+	--Flying Script--
+	--Press "E" To Fly And Unfly--
+	script.parent.MouseButton1Down:connect(function()
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Head 
+		local flying = false
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 50 
+		local speed = 0 
+	
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+.5+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "e" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+end
+coroutine.wrap(JNKXJZ_fake_script)()
+local function TDDI_fake_script() -- Heal.Script 
+	local script = Instance.new('Script', Heal)
+
+	function onButtonClicked()
+	a = script.Parent.Parent.Parent.Parent.Character
+		a.Humanoid.WalkSpeed = 25
+	a.Humanoid.MaxHealth = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		a.Humanoid.Health = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+	a.Torso.Transparency = 1
+	end
+	
+	script.Parent.MouseButton1Down:connect(onButtonClicked)
+end
+coroutine.wrap(TDDI_fake_script)()
